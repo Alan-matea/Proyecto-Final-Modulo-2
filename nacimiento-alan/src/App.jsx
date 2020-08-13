@@ -12,6 +12,14 @@ function App() {
   return (
     <div>
       <Navbar />
+
+      <div>
+      <Textfield value="" placeholder="Correo electrónico" type="email"/>
+      </div>
+
+      <div>
+      <Textfield value="" placeholder="Contraseña" type="password"/>
+      </div>
       
       <LockOutlinedIcon></LockOutlinedIcon>
       <Button variant="contained" color="secondary">
