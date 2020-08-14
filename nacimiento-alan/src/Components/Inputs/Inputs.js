@@ -18,12 +18,12 @@ export default function FormPropsTextFields() {
     <form className={classes.root} noValidate autoComplete="off">
       <div>
         
-        <TextField id="outlined-search" label="Correo electrónico" type="email" variant="outlined" />
+        
         
       </div>
 
       <div> 
-      <TextField id="outlined-search" label="Contraseña" type="password" variant="outlined" />
+      
       </div>
 
     </form>
