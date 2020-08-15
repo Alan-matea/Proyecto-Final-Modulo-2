@@ -8,11 +8,13 @@ import {
   Divider,
   Typography,
   FormControl,
+  Paper,
 } from "@material-ui/core";
 
 const Login = () => {
   return (
     <Box color="primary.contrastText" p={2} textAlign="center">
+      <Paper variant="outlined" elevation={3}>
       <LockOutlinedIcon  color="secondary" />
       <Typography variant="h6" color="secondary">
         Ingresar
@@ -47,6 +49,7 @@ const Login = () => {
           REGISTRATE
         </Button>
       </FormControl>
+      </Paper>
     </Box>
   );
 };
