@@ -13,8 +13,8 @@ import {
 const Login = () => {
   return (
     <Box color="primary.contrastText" p={2} textAlign="center">
-      <LockOutlinedIcon />
-      <Typography>
+      <LockOutlinedIcon  color="secondary" />
+      <Typography variant="h6" color="secondary">
         Ingresar
       </Typography>
       <FormControl>
@@ -39,9 +39,9 @@ const Login = () => {
 
         <Divider />
 
-        <Link className="link" href="#">
+        <Typography variant="h6" color="secondary">
           ¿NO TIENES CUENTA?
-        </Link>
+        </Typography>
 
         <Button variant="outlined" color="secondary">
           REGISTRATE
