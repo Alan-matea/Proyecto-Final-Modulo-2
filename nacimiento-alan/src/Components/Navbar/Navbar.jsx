@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import { Box } from "@material-ui/core";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,9 +25,11 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
+          <Box textAlign="center" >
           <Typography variant="h6" className={classes.title}>
             Mateify
           </Typography>
+          </Box>
         </Toolbar>
       </AppBar>
     </div>
