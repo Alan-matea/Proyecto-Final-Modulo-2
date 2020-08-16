@@ -11,12 +11,13 @@ import {
   Paper,
 } from "@material-ui/core";
 
+
 const Login = () => {
   return (
     <Box color="primary.contrastText" p={2} textAlign="center">
       <Paper variant="outlined" elevation={3}>
       <LockOutlinedIcon  color="secondary" />
-      <Typography variant="h6" color="secondary">
+      <Typography variant="h6" color="initial">
         Ingresar
       </Typography>
       <FormControl>
@@ -41,11 +42,11 @@ const Login = () => {
 
         <Divider />
 
-        <Typography variant="h6" color="secondary">
+        <Typography variant="h6" color="error">
           ¿NO TIENES CUENTA?
         </Typography>
 
-        <Button variant="outlined" color="secondary">
+        <Button variant="outlined" color="primary">
           REGISTRATE
         </Button>
       </FormControl>

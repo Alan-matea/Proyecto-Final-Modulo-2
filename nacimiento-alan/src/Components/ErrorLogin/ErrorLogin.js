@@ -7,11 +7,11 @@ const ErrorLogin = () => {
     <Box color="primary.contrastText" p={2} textAlign="center">
       <Paper variant="outlined" elevation={3}>
         <LockOutlinedIcon color="secondary" />
-        <Typography variant="h4" color="secondary">
+        <Typography variant="h4" color="initial">
           Mmm... algo no salió bien
         </Typography>
         <FormControl>
-          <Typography variant="h6" color="secondary">
+          <Typography variant="h6" color="initial">
             Debes estar autenticado para acceder a esta página
           </Typography>
         </FormControl>
