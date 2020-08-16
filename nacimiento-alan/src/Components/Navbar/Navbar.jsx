@@ -3,9 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import { Box } from "@material-ui/core";
-
-
+import LogoMatea from "../../Logo/LogoMatea.png";
+import "./styles.css"
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -24,12 +23,11 @@ export default function ButtonAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
-          <Box textAlign="center" >
+        <Toolbar variant="regular" className="items-position">
+          <img src={LogoMatea} alt="LogoMatea" className="LogoMatea" />
           <Typography variant="h6" className={classes.title}>
             Mateify
           </Typography>
-          </Box>
         </Toolbar>
       </AppBar>
     </div>

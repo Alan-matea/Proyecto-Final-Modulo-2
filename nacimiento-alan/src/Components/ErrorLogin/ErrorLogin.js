@@ -6,17 +6,15 @@ const ErrorLogin = () => {
   return (
     <Box m={20} p={1} textAlign="center">
       <Paper variant="outlined" elevation={3}>
-      
-        <LockOutlinedIcon color="secondary" />
-        
-        <Typography variant="h4" color="initial">
-          Mmm... algo no salió bien
-        </Typography>
-        <FormControl>
+        <Box pt={10} pb={10} pl={5} pr={5}>
+          <LockOutlinedIcon color="secondary" />
+          <Typography variant="h4" color="initial">
+            Mmm... algo no salió bien
+          </Typography>
           <Typography variant="h6" color="initial">
             Debes estar autenticado para acceder a esta página
           </Typography>
-        </FormControl>
+        </Box>
       </Paper>
     </Box>
   );
