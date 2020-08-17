@@ -33,7 +33,7 @@ const Login = () => {
           type="password"
           variant="outlined"
         />
-        <Button variant="contained" color="secondary">
+        <Button variant="contained" color="secondary" className="Link-click">
           COMENZAR A CREAR PLAYLISTS
         </Button>
         <Link className="link" href="#">

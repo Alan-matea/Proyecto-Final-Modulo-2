@@ -13,32 +13,9 @@ import {
   IconButton,
 } from "@material-ui/core";
 
-import AddCircleRoundedIcon from '@material-ui/icons/AddCircleRounded';
-
-import ThumbUpAltRoundedIcon from '@material-ui/icons/ThumbUpAltRounded';
-
-import ThumbDownAltRoundedIcon from '@material-ui/icons/ThumbDownAltRounded';
-
-import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
-
-
-
-
-
-
-import Icon from '@material-ui/core/Icon';
-
-
-
-
-  
-
- 
-  
-
-
-
-
+import AddCircleRoundedIcon from "@material-ui/icons/AddCircleRounded";
+import ThumbUpAltRoundedIcon from "@material-ui/icons/ThumbUpAltRounded";
+import ThumbDownAltRoundedIcon from "@material-ui/icons/ThumbDownAltRounded";
 
 const Playlists = () => {
   return (
@@ -69,15 +46,13 @@ const Playlists = () => {
               </TableHead>
               <TableBody>
                 <TableRow>
-                  
-                  
                   <TableCell align="left">Nombre</TableCell>
                   <TableCell align="center">Artista</TableCell>
                   <TableCell align="center">Álbum</TableCell>
                   <TableCell align="center">Duración</TableCell>
-                  <TableCell align="center"><AddCircleRoundedIcon color="secondary" /></TableCell>
-                
-                
+                  <TableCell align="center">
+                    <AddCircleRoundedIcon color="secondary" />
+                  </TableCell>
                 </TableRow>
               </TableBody>
             </Box>
@@ -101,54 +76,51 @@ const Playlists = () => {
                 </TableRow>
               </TableHead>
               <TableBody>
-                
-                  
-                    
-              <TableRow>
+                <TableRow>
                   <TableCell align="left">Nombre</TableCell>
                   <TableCell align="center">Artista</TableCell>
                   <TableCell align="center">Álbum</TableCell>
                   <TableCell align="center">Duración</TableCell>
-                  <TableCell align="center"><ThumbUpAltRoundedIcon/> <ThumbDownAltRoundedIcon/></TableCell>
-            </TableRow>
-
-            <TableRow>
+                  <TableCell align="center">
+                    <ThumbUpAltRoundedIcon /> <ThumbDownAltRoundedIcon />
+                  </TableCell>
+                </TableRow>
+                <TableRow>
                   <TableCell align="left">Nombre</TableCell>
                   <TableCell align="center">Artista</TableCell>
                   <TableCell align="center">Álbum</TableCell>
                   <TableCell align="center">Duración</TableCell>
-                  <TableCell align="center"><ThumbUpAltRoundedIcon/> <ThumbDownAltRoundedIcon/></TableCell>
-            </TableRow>
-
-
-            <TableRow>
+                  <TableCell align="center">
+                    <ThumbUpAltRoundedIcon /> <ThumbDownAltRoundedIcon />
+                  </TableCell>
+                </TableRow>
+                <TableRow>
                   <TableCell align="left">Nombre</TableCell>
                   <TableCell align="center">Artista</TableCell>
                   <TableCell align="center">Álbum</TableCell>
                   <TableCell align="center">Duración</TableCell>
-                  <TableCell align="center"><ThumbUpAltRoundedIcon/> <ThumbDownAltRoundedIcon/></TableCell>
-            </TableRow>
-
-
-            <TableRow>
+                  <TableCell align="center">
+                    <ThumbUpAltRoundedIcon /> <ThumbDownAltRoundedIcon />
+                  </TableCell>
+                </TableRow>
+                <TableRow>
                   <TableCell align="left">Nombre</TableCell>
                   <TableCell align="center">Artista</TableCell>
                   <TableCell align="center">Álbum</TableCell>
                   <TableCell align="center">Duración</TableCell>
-                  <TableCell align="center"><ThumbUpAltRoundedIcon/> <ThumbDownAltRoundedIcon/></TableCell>
-         </TableRow>
-         
-         <TableRow>
+                  <TableCell align="center">
+                    <ThumbUpAltRoundedIcon /> <ThumbDownAltRoundedIcon />
+                  </TableCell>
+                </TableRow>
+                <TableRow>
                   <TableCell align="left">Nombre</TableCell>
                   <TableCell align="center">Artista</TableCell>
                   <TableCell align="center">Álbum</TableCell>
                   <TableCell align="center">Duración</TableCell>
-                  <TableCell align="center"><ThumbUpAltRoundedIcon/> <ThumbDownAltRoundedIcon/></TableCell>     
-         </TableRow>   
-                      
-                      
-                    
-                
+                  <TableCell align="center">
+                    <ThumbUpAltRoundedIcon /> <ThumbDownAltRoundedIcon />
+                  </TableCell>
+                </TableRow>
               </TableBody>
             </Box>
           </Paper>
