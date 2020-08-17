@@ -109,9 +109,16 @@ const Playlists = () => {
                   <TableCell align="center">Artista</TableCell>
                   <TableCell align="center">Álbum</TableCell>
                   <TableCell align="center">Duración</TableCell>
-                  <TableCell align="center">Agregar</TableCell>
+                  <TableCell align="center"><ThumbUpAltRoundedIcon/> <ThumbDownAltRoundedIcon/></TableCell>
             </TableRow>
 
+            <TableRow>
+                  <TableCell align="left">Nombre</TableCell>
+                  <TableCell align="center">Artista</TableCell>
+                  <TableCell align="center">Álbum</TableCell>
+                  <TableCell align="center">Duración</TableCell>
+                  <TableCell align="center"><ThumbUpAltRoundedIcon/> <ThumbDownAltRoundedIcon/></TableCell>
+            </TableRow>
 
 
             <TableRow>
@@ -119,7 +126,16 @@ const Playlists = () => {
                   <TableCell align="center">Artista</TableCell>
                   <TableCell align="center">Álbum</TableCell>
                   <TableCell align="center">Duración</TableCell>
-                  <TableCell align="center">Agregar</TableCell>
+                  <TableCell align="center"><ThumbUpAltRoundedIcon/> <ThumbDownAltRoundedIcon/></TableCell>
+            </TableRow>
+
+
+            <TableRow>
+                  <TableCell align="left">Nombre</TableCell>
+                  <TableCell align="center">Artista</TableCell>
+                  <TableCell align="center">Álbum</TableCell>
+                  <TableCell align="center">Duración</TableCell>
+                  <TableCell align="center"><ThumbUpAltRoundedIcon/> <ThumbDownAltRoundedIcon/></TableCell>
          </TableRow>
          
          <TableRow>
@@ -127,7 +143,7 @@ const Playlists = () => {
                   <TableCell align="center">Artista</TableCell>
                   <TableCell align="center">Álbum</TableCell>
                   <TableCell align="center">Duración</TableCell>
-                  <TableCell align="center">Agregar</TableCell>     
+                  <TableCell align="center"><ThumbUpAltRoundedIcon/> <ThumbDownAltRoundedIcon/></TableCell>     
          </TableRow>   
                       
                       
