@@ -23,7 +23,7 @@ export default function ButtonAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar variant="regular" className="items-position">
+        <Toolbar variant="regular" className="Items-position">
           <img src={LogoMatea} alt="LogoMatea" className="LogoMatea" />
           <Typography variant="h6" className={classes.title}>
             Mateify

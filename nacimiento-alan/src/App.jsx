@@ -11,9 +11,8 @@ function App() {
     <div>
       
       <Navbar />
-      <ErrorLogin />
-    
-     
+      <Playlists />
+
     </div>
   );
 }
