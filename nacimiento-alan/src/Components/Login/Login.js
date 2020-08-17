@@ -26,7 +26,7 @@ const Login = () => {
   return (
     <Box color="primary.contrastText" p={2} textAlign="center" className={classes.margin}>
       <Paper variant="outlined" elevation={3}>
-        <LockOutlinedIcon color="secondary" className={classes.margin}/>
+        <LockOutlinedIcon color="secondary" fontSize="large" className={classes.margin}/>
         <Typography variant="h6" color="initial" paragraph>
           Ingresar
         </Typography>
@@ -43,7 +43,7 @@ const Login = () => {
             type="password"
             variant="outlined"
           />
-          <Button variant="contained" color="secondary" className="Link-click">
+          <Button variant="contained" color="secondary" size="large" className={classes.margin}>
             COMENZAR A CREAR PLAYLISTS
           </Button>
 
@@ -57,7 +57,7 @@ const Login = () => {
             ¿NO TIENES CUENTA?
           </Typography>
           <Box>
-            <Button variant="outlined" color="primary" className={classes.margin}>
+            <Button variant="outlined" color="primary" size="large" className={classes.margin}>
               REGISTRATE
             </Button>
           </Box>
