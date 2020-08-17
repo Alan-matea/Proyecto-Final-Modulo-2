@@ -13,8 +13,6 @@ import {
   IconButton,
 } from "@material-ui/core";
 
-
-
 const Playlists = () => {
   return (
     <Box>
@@ -33,27 +31,22 @@ const Playlists = () => {
               <Typography variant="h6" color="primary">
                 Resultados
               </Typography>
-
               <TableHead>
                 <TableRow>
-                  <TableCell align="left">
-                    Nombre
-                  </TableCell>
+                  <TableCell align="left">Nombre</TableCell>
                   <TableCell align="center">Artista</TableCell>
                   <TableCell align="center">Álbum</TableCell>
                   <TableCell align="center">Duración</TableCell>
-                  <TableCell align="center">
-                    Agregar
-                  </TableCell>
+                  <TableCell align="center">Agregar</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
                 <TableRow>
-                    <Box textAlign="center" p={2}>
-                  <Typography variant="h6" color="error">
-                    No hay resultados: utiliza la barra de búsqueda para
-                    encontrar canciones
-                  </Typography>
+                  <Box textAlign="center" p={2}>
+                    <Typography variant="h6" color="error">
+                      No hay resultados: utiliza la barra de búsqueda para
+                      encontrar canciones
+                    </Typography>
                   </Box>
                 </TableRow>
               </TableBody>
@@ -65,32 +58,28 @@ const Playlists = () => {
         <TableContainer>
           <Paper variant="outlined">
             <Box px="50px" py="20px">
-            <Typography variant="h6" color="primary">
+              <Typography variant="h6" color="primary">
                 Tu Playlist
               </Typography>
               <TableHead>
-              <TableRow>
-                <TableCell align="left">
-                  Nombre
-                </TableCell>
-                <TableCell align="center">Artista</TableCell>
-                <TableCell align="center">Álbum</TableCell>
-                <TableCell align="center">Duración</TableCell>
-                <TableCell align="center">
-                  Agregar
-                </TableCell>
+                <TableRow>
+                  <TableCell align="left">Nombre</TableCell>
+                  <TableCell align="center">Artista</TableCell>
+                  <TableCell align="center">Álbum</TableCell>
+                  <TableCell align="center">Duración</TableCell>
+                  <TableCell align="center">Agregar</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
-                <Box mx="auto" p={5} >
+                <Box mx="auto" p={5}>
                   <Paper variant="outlined">
                     <Box textAlign="center" p={3}>
-                    <Typography variant="body1" color="error">
-                          UPS!, TU PLAYLIST AÚN ESTÁ VACIA
-                        </Typography>
-                        <Typography variant="body1" color="error">
-                          Comienza a agregar canciones
-                        </Typography>
+                      <Typography variant="body1" color="error">
+                        UPS!, TU PLAYLIST AÚN ESTÁ VACIA
+                      </Typography>
+                      <Typography variant="body1" color="error">
+                        Comienza a agregar canciones
+                      </Typography>
                     </Box>
                   </Paper>
                 </Box>

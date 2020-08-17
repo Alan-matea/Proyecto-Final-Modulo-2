@@ -11,7 +11,7 @@ function App() {
     <div>
       
       <Navbar />
-      <Playlists />
+      <PlaylistsCreator />
 
     </div>
   );
