@@ -1,9 +1,7 @@
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
-import Login from "./Components/Login/Login";
-import Playlists from "./Components/Playlists/Playlists";
-import ErrorLogin from "./Components/ErrorLogin/ErrorLogin";
-import PlaylistsCreator from "./Components/PlaylistsCreator/PlaylistsCreator";
+import Login from "./pages/Login/Login";
+import Playlists from "./pages/Playlists/Playlists";
 import { BrowserRouter as Router, Switch, } from "react-router-dom";
 
 function App() {
@@ -16,16 +14,9 @@ function App() {
             <Login />
           </Router>
 
-          <Router path="/ErrorLogin">
-            <ErrorLogin />
-          </Router>
-
-          <Router path="/Playlists">
+          <Router path="/playlists">
             <Playlists />
-          </Router>
-
-          <Router path="/PlaylistsCreator">
-            <PlaylistsCreator />
+       
           </Router>
         </Switch>
       </div>
