@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import {
   Box,
@@ -16,6 +16,59 @@ import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 
 import { pink } from "@material-ui/core/colors";
+
+import DateUserJson './base-de-datos/userData.json';
+
+export const FormValidation = (props) => {
+    [const valorDelInput, setValorDelInput] = useState ("");
+    [const valorDelInputcontraseña, setValorDelInputcontraseña] = useState ("");}
+
+const mostrarTextoIngesado = {evento} => {
+  setValorDelInput(evento.target.value);
+};
+const mostrarTextoIngesadocontraseña = {evento} => {
+  setValorDelInput(evento.target.value);
+};
+
+const chequeaUsuarios ={ element } => {
+  if (element.email === valorDelInput && element.password === 
+    valorDelInputcontraseña) {
+    return true;
+    
+  } else {
+    return false;
+  }
+};
+
+  //OnClick evento
+const validaUsuario = () => {
+  const FilterUser = DateUserJson.filter(chequeaUsuarios);
+  console.log(FilterUser);
+  if (FilterUser.length > 0){
+    alert("usuarui correcto");
+  }else {
+    alert("no");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const useStyle = makeStyles((theme) => ({
   margin: {
