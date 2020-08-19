@@ -8,7 +8,6 @@ const Playlists = () => {
   return (
     <Box>
       <Search />
-
       <Box mb={-3} m={5}>
         <Tabla />
       </Box>

@@ -1,90 +1,33 @@
 import React, { useState } from "react";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import {
-  Box,
-  TextField,
-  Button,
-  Link,
-  Divider,
-  Typography,
-  FormControl,
-  Paper,
-} from "@material-ui/core";
-
+import { Box, TextField, Button, Link, Divider, Typography, FormControl, Paper} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-
 import Avatar from "@material-ui/core/Avatar";
-
 import { pink } from "@material-ui/core/colors";
-
-import DateUserJson './base-de-datos/userData.json';
-
-export const FormValidation = (props) => {
-    [const valorDelInput, setValorDelInput] = useState ("");
-    [const valorDelInputcontraseña, setValorDelInputcontraseña] = useState ("");}
-
-const mostrarTextoIngesado = {evento} => {
-  setValorDelInput(evento.target.value);
-};
-const mostrarTextoIngesadocontraseña = {evento} => {
-  setValorDelInput(evento.target.value);
-};
-
-const chequeaUsuarios ={ element } => {
-  if (element.email === valorDelInput && element.password === 
-    valorDelInputcontraseña) {
-    return true;
-    
-  } else {
-    return false;
-  }
-};
-
-  //OnClick evento
-const validaUsuario = () => {
-  const FilterUser = DateUserJson.filter(chequeaUsuarios);
-  console.log(FilterUser);
-  if (FilterUser.length > 0){
-    alert("usuarui correcto");
-  }else {
-    alert("no");
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const useStyle = makeStyles((theme) => ({
   margin: {
-    margin: "15px",
+    marginBottom: "50px",
   },
+
+  form: {
+    width: "60%",
+  },
+
   pink: {
     color: theme.palette.getContrastText(pink[500]),
     backgroundColor: pink[500],
-    width: "60px",
-    height: "60px",
-    left: "100px",
+    width: "55px",
+    height: "55px",
     top: "10px",
     margin: "15px",
-    
-
   },
+
+  large: {
+    width: theme.spacing(4),
+    height: theme.spacing(4),
+  },
+
 }));
 
 const Login = () => {
@@ -92,62 +35,64 @@ const Login = () => {
   return (
     <Box
       color="primary.contrastText"
-      p={2}
       textAlign="center"
+      py={4}
       className={classes.margin}
     >
       <Paper variant="outlined" elevation={3}>
-        <Avatar className={classes.pink}>
-          <LockOutlinedIcon />
-        </Avatar>
-
-        <Typography variant="h6" color="initial" paragraph>
-          Ingresar
-        </Typography>
-        <FormControl>
-          <TextField
-            className={classes.margin}
-            id="outlined-search"
-            label="Correo electrónico"
-            type="email"
-            variant="outlined"
-          />
-          <TextField
-            className={classes.margin}
-            id="outlined-search"
-            label="Contraseña"
-            type="password"
-            variant="outlined"
-          />
-          <Button
-            variant="contained"
-            color="secondary"
-            size="large"
-            className={classes.margin}
-          >
-            COMENZAR A CREAR PLAYLISTS
-          </Button>
-
-          <Link className="link" href="#" className={classes.margin}>
-            ¿HAS OLVIDADO LA CONTRASEÑA?
-          </Link>
-
-          <Divider className={classes.margin} />
-
-          <Typography variant="body1" color="error" className={classes.margin}>
-            ¿NO TIENES CUENTA?
+        <Box py={4}>
+          <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
+            <Avatar className={classes.pink}>
+              <LockOutlinedIcon className={classes.large} />
+            </Avatar>
+          </Box>
+          <Typography variant="h4" color="initial" className={classes.margin}>
+            Ingresar
           </Typography>
-          <Box>
-            <Button
+          <FormControl className={classes.form}>
+            <TextField
+              className={classes.margin}
+              id="outlined-search"
+              label="Correo electrónico"
+              type="email"
               variant="outlined"
-              color="primary"
+              fullWidth
+            />
+            <TextField
+              className={classes.margin}
+              id="outlined-search"
+              label="Contraseña"
+              type="password"
+              variant="outlined"
+              fullWidth
+            />
+            <Button
+              variant="contained"
+              color="secondary"
               size="large"
               className={classes.margin}
             >
-              REGISTRATE
+              COMENZAR A CREAR PLAYLISTS
             </Button>
-          </Box>
-        </FormControl>
+            <Link className="link" href="#" className={classes.margin}>
+              ¿HAS OLVIDADO LA CONTRASEÑA?
+            </Link>
+            <Divider className={classes.margin} />
+            <Typography variant="h6" color="error" paragraph >
+              ¿NO TIENES CUENTA?
+            </Typography>
+            <Box>
+              <Button
+                variant="outlined"
+                color="primary"
+                size="large"
+                className={classes.margin}
+              >
+                REGISTRATE
+              </Button>
+            </Box>
+          </FormControl>
+        </Box>
       </Paper>
     </Box>
   );
