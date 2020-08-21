@@ -24,9 +24,9 @@ const Tabla2 = () => {
               <TableRow>
                 <TableCell align="center">Nombre</TableCell>
                 <TableCell align="center">Artista</TableCell>
-                <TableCell align="center">Álbum</TableCell>
                 <TableCell align="center">Duración</TableCell>
-                <TableCell align="center">Agregar</TableCell>
+                <TableCell align="center">Cant. Votos</TableCell>
+                <TableCell align="center">Votar</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>

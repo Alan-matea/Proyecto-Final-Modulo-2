@@ -37,7 +37,7 @@ export default function ButtonAppBar() {
       <AppBar position="static">
         <Toolbar variant="regular" className="Items-position">
           <img src={LogoMatea} alt="LogoMatea" className="LogoMatea" />
-          <Typography variant="h6" className="Items-position">
+          <Typography variant="h6" className="Fuente">
             Mateify
           </Typography>
           <Avatar
