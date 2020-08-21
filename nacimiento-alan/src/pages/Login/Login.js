@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import { Box, TextField, Button, Link, Divider, Typography, FormControl, Paper} from "@material-ui/core";
+import {
+  Box,
+  TextField,
+  Button,
+  Link,
+  Divider,
+  Typography,
+  FormControl,
+  Paper,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import { pink } from "@material-ui/core/colors";
@@ -27,7 +36,6 @@ const useStyle = makeStyles((theme) => ({
     width: theme.spacing(4),
     height: theme.spacing(4),
   },
-
 }));
 
 const Login = () => {
@@ -41,7 +49,12 @@ const Login = () => {
     >
       <Paper variant="outlined" elevation={3}>
         <Box py={4}>
-          <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
+          <Box
+            display="flex"
+            flexDirection="row"
+            justifyContent="center"
+            alignItems="center"
+          >
             <Avatar className={classes.pink}>
               <LockOutlinedIcon className={classes.large} />
             </Avatar>
@@ -78,7 +91,7 @@ const Login = () => {
               ¿HAS OLVIDADO LA CONTRASEÑA?
             </Link>
             <Divider className={classes.margin} />
-            <Typography variant="h6" color="error" paragraph >
+            <Typography variant="h6" color="error" paragraph>
               ¿NO TIENES CUENTA?
             </Typography>
             <Box>

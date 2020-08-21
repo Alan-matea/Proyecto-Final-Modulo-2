@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   TableBody,
   TableCell,
@@ -23,7 +22,7 @@ const Tabla2 = () => {
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell align="left">Nombre</TableCell>
+                <TableCell align="center">Nombre</TableCell>
                 <TableCell align="center">Artista</TableCell>
                 <TableCell align="center">Álbum</TableCell>
                 <TableCell align="center">Duración</TableCell>

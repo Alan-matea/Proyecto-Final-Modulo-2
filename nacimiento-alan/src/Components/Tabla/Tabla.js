@@ -9,10 +9,10 @@ import {
   Box,
   Typography,
   Paper,
-  Table
+  Table,
 } from "@material-ui/core";
 
-const Tabla = () => {
+const Tabla = (props) => {
   return (
     <TableContainer>
       <Paper variant="outlined">
@@ -23,7 +23,7 @@ const Tabla = () => {
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell align="left">Nombre</TableCell>
+                <TableCell align="center">Nombre</TableCell>
                 <TableCell align="center">Artista</TableCell>
                 <TableCell align="center">Álbum</TableCell>
                 <TableCell align="center">Duración</TableCell>
@@ -31,11 +31,11 @@ const Tabla = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              <TableRow >
+              <TableRow>
                 <Box textAlign="center" p={2}>
                   <Typography variant="h6" color="error">
-                    No hay resultados: utiliza la barra de búsqueda para encontrar
-                    canciones
+                    No hay resultados: utiliza la barra de búsqueda para
+                    encontrar canciones
                   </Typography>
                 </Box>
               </TableRow>
