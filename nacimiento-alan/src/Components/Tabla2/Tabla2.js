@@ -8,10 +8,15 @@ import {
   Box,
   Typography,
   Paper,
-  Table
+  Table,
+  Fab,
+  
 } from "@material-ui/core";
 
-const Tabla2 = () => {
+import Icon from '@material-ui/core/Icon';
+import ThumbDownIcon from '@material-ui/icons/ThumbDown';
+import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+const Tabla2 = (props) => {
   return (
     <TableContainer>
       <Paper variant="outlined">
@@ -30,6 +35,18 @@ const Tabla2 = () => {
               </TableRow>
             </TableHead>
             <TableBody>
+            {props.myPlaylist.map((song) => (
+                        <TableRow key={song.uuid}>
+                        <TableCell align="left">{song.name}</TableCell>
+                        <TableCell align="left">{song.album}</TableCell>
+                        <TableCell align="left">{song.duration}</TableCell>
+                        <TableCell align="left"> {song.count} </TableCell>
+                        <TableCell align="left"><Fab onClick = {(e) => props.handleThumbsUpClick(e, song.uuid)}> <ThumbUpIcon/> </Fab></TableCell>
+                        <TableCell align="left"><Fab onClick = {(e) => props.handleThumbsDownClick(e, song.uuid)}> <ThumbDownIcon/> </Fab ></TableCell>
+                        </TableRow>
+          ))}
+
+
               <Box flexDirection="row" justifyContent="center" p={5}>
                 <Paper variant="outlined">
                   <Box textAlign="center" p={3}>

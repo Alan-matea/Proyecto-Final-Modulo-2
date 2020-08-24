@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   TableBody,
   TableCell,
@@ -31,14 +30,16 @@ const Tabla = (props) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              <TableRow>
-                <Box textAlign="center" p={2}>
-                  <Typography variant="h6" color="error">
-                    No hay resultados: utiliza la barra de búsqueda para
-                    encontrar canciones
-                  </Typography>
-                </Box>
-              </TableRow>
+              {props.listaFiltrada.map((song) => (
+                <TableRow >
+                  <TableCell align="left">{song.name}</TableCell>
+                  <TableCell align="left">{song.artist}</TableCell>
+                  <TableCell align="left">{song.duration}</TableCell>
+                  <TableCell align="left"> {song.duration} </TableCell>
+                  <TableCell align="left"> Agregar </TableCell>
+
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </Box>

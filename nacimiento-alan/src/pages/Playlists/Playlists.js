@@ -6,7 +6,28 @@ import Tabla2 from "../../Components/Tabla2/Tabla2";
 import canciones from "../../base-de-datos/songData.json";
 const Playlists = () => {
   const [inputValue, setInputValue] = useState("");
-  const [listaFiltrada, setListaFiltrada] = useState([]);
+  const [listaFiltrada, setListaFiltrada] = useState([{
+    "uuid": 1,
+    "name": "Maldición",
+    "album": "Parvadomus",
+    "duration": "3:04",
+    "artist": {
+        "uuid": "1",
+        "name": "Once Tiros",
+        "coverUrl": "https://seeklogo.com/images/O/once-tiros-logo-9B5F6C2437-seeklogo.com.png"
+    }
+}]);
+  const [myPlaylist, setMyPlaylist] = useState([[{
+    "uuid": 1,
+    "name": "Maldición",
+    "album": "Parvadomus",
+    "duration": "3:04",
+    "artist": {
+        "uuid": "1",
+        "name": "Once Tiros",
+        "coverUrl": "https://seeklogo.com/images/O/once-tiros-logo-9B5F6C2437-seeklogo.com.png"
+    }
+}]]);
 
   const handleInputChange = (e) => {
     console.log("Se ejecuta handleInputChange y actualiza el inputValue");
@@ -57,10 +78,10 @@ const Playlists = () => {
         handleInputKeyPress={handleInputKeyPress}
       />
       <Box mb={-3} m={5}>
-        <Tabla listaFiltrada={listaFiltrada} />
+      
       </Box>
       <Box mb={3} m={5}>
-        <Tabla2 />
+        <Tabla2 myPlaylist= {myPlaylist} />
       </Box>
     </Box>
 
