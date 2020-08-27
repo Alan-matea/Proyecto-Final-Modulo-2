@@ -30,16 +30,7 @@ const Tabla = (props) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {props.listaFiltrada.map((song) => (
-                <TableRow >
-                  <TableCell align="left">{song.name}</TableCell>
-                  <TableCell align="left">{song.artist}</TableCell>
-                  <TableCell align="left">{song.duration}</TableCell>
-                  <TableCell align="left"> {song.duration} </TableCell>
-                  <TableCell align="left"> Agregar </TableCell>
-
-                </TableRow>
-              ))}
+            
             </TableBody>
           </Table>
         </Box>

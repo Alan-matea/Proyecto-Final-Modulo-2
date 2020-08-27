@@ -87,7 +87,7 @@ const Login = () => {
             >
               COMENZAR A CREAR PLAYLISTS
             </Button>
-            <Link className="link" href="#" className={classes.margin}>
+            <Link href="#" className={classes.margin}>
               ¿HAS OLVIDADO LA CONTRASEÑA?
             </Link>
             <Divider className={classes.margin} />

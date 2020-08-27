@@ -6,28 +6,8 @@ import Tabla2 from "../../Components/Tabla2/Tabla2";
 import canciones from "../../base-de-datos/songData.json";
 const Playlists = () => {
   const [inputValue, setInputValue] = useState("");
-  const [listaFiltrada, setListaFiltrada] = useState([{
-    "uuid": 1,
-    "name": "Maldición",
-    "album": "Parvadomus",
-    "duration": "3:04",
-    "artist": {
-        "uuid": "1",
-        "name": "Once Tiros",
-        "coverUrl": "https://seeklogo.com/images/O/once-tiros-logo-9B5F6C2437-seeklogo.com.png"
-    }
-}]);
-  const [myPlaylist, setMyPlaylist] = useState([[{
-    "uuid": 1,
-    "name": "Maldición",
-    "album": "Parvadomus",
-    "duration": "3:04",
-    "artist": {
-        "uuid": "1",
-        "name": "Once Tiros",
-        "coverUrl": "https://seeklogo.com/images/O/once-tiros-logo-9B5F6C2437-seeklogo.com.png"
-    }
-}]]);
+  const [listaFiltrada, setListaFiltrada] = useState([]);
+  const [myPlaylist, setMyPlaylist] = useState();
 
   const handleInputChange = (e) => {
     console.log("Se ejecuta handleInputChange y actualiza el inputValue");
@@ -35,12 +15,6 @@ const Playlists = () => {
   };
 
   const filtrarCanciones = (cancion) => {
-    console.log("Se ejecuta filtrarCanciones");
-    console.log("Valor del input: ");
-    console.log(inputValue);
-    console.log("Canción: ");
-    console.log(cancion);
-
     if (cancion.name.includes(inputValue)) {
       return true;
     } else {
@@ -50,16 +24,9 @@ const Playlists = () => {
 
   const handleInputKeyPress = (e) => {
     if (e.key === "Enter") {
-      console.log("Se ejecuta el handleInputKeyPress");
-
-      // primero me quedo con los resultyados filtrados
       const resultados = canciones.filter(filtrarCanciones);
-      console.log("Tenemos el array con los resultados filtrados:");
-      console.log(resultados);
-
-      // despues actualizo el estado con esos resultados pora poder mostrarlos en el render
       setListaFiltrada(resultados);
-      console.log("Se actualiza el estado de las canciones a mostrar");
+      console.log(listaFiltrada);
     }
   };
 
@@ -81,7 +48,7 @@ const Playlists = () => {
       
       </Box>
       <Box mb={3} m={5}>
-        <Tabla2 myPlaylist= {myPlaylist} />
+        <Tabla listaFiltrada={listaFiltrada} />
       </Box>
     </Box>
 

@@ -1,31 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App.jsx';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App.js";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
-const theme = createMuiTheme ({
+const theme = createMuiTheme({
   palette: {
     primary: {
-      main:'#009688'
+      main: "#009688",
+    },
+
+    error: {
+      main: "#C4C4C4",
+    },
+
   },
-
-  error: {
-    main:'#C4C4C4'
-},
-
+  typography: {
+    h5: {
+      fontSize: "30px",
+      fontFamily: "Righteous"
+    }
   }
-})
-
+});
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-     <App />
+      <App />
     </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-

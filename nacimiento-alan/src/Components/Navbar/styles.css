@@ -5,6 +5,7 @@
 
 .Items-position {
   justify-content: center;
+  align-items: center;
 }
 .Fuente {
   font-family: "Righteous", cursive;

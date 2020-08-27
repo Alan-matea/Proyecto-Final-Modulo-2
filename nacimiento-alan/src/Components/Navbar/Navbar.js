@@ -24,7 +24,9 @@ const useStyles = makeStyles((theme) => ({
     
 
   },
-
+  app: {
+    height:"80px"
+  }
 
 
 }));
@@ -34,10 +36,10 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" className={classes.app}>
         <Toolbar variant="regular" className="Items-position">
           <img src={LogoMatea} alt="LogoMatea" className="LogoMatea" />
-          <Typography variant="h6" className="Fuente">
+          <Typography variant="h5">
             Mateify
           </Typography>
           <Avatar
